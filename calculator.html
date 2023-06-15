@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel = "stylesheet" href = "calculator.css">
+</head>
+<body>
+    <main>
+        <input type="text"disabled>
+        <!--text 타입의 요소는 사용자가 클릭할 수 없고 사용할 수 없음-->
+        <div class="button-wrap">
+        <!--button-wrap이라는 class를 생성하고, 버튼을 만들어줌-->
+            <button data-type="ac" class="ac">AC</button>
+            <!--스크립트 핸들링을 위해 의미없는 클래스나 id를 사용하지 않아도 되고 
+                클래스가 이미 멀티 클래스로 많이 사용된 경우 data 속성을 준 요소만 별도로 스타일 요소를 적용-->
+            <button data-type="operator">&divide;</button>
+            <!--&divide;는 나눗셈 표시를 위한 html 토큰-->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-type="operator">&times;</button>
+            <!--&times;는 곱셈 표시를 위한 html 토큰-->
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-type="operator">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-type="operator">+</button>
+            <button class="zero">0</button>
+            <!--zero 클래스 추가-->
+            <button>.</button>
+            <button data-type="equals" class="equals">=</button>
+        </div>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
